@@ -16,9 +16,13 @@ variable "web_instance_type" {
 
 variable "web_ami" {
   default = {
-    us-east-1 = "ami-0d5eff06f840b45e9"
+    us-east-1  = "ami-0d5eff06f840b45e9"
     ap-south-1 = "ami-010aff33ed5991201"
   }
-  type    = map(string)
+  type = map(string)
+}
+
+variable "web_s3" {
+  default = "javahome-dev"
 }
 
